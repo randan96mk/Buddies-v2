@@ -1,4 +1,4 @@
-package com.trendit.mkg.trendit;
+package com.buddies.mkg;
 
 /**
  * Created by gmadikex on 8/27/2016.

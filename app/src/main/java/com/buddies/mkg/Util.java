@@ -1,4 +1,4 @@
-package com.trendit.mkg.trendit;
+package com.buddies.mkg;
 
 import android.util.Log;
 

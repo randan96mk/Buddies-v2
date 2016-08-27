@@ -1,19 +1,15 @@
-package com.trendit.mkg.trendit;
+package com.buddies.mkg;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Html;
-import android.text.Spanned;
 import android.view.View;
 import android.widget.Toast;
 
@@ -26,6 +22,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.trendit.mkg.trendit.R;
 
 import java.util.List;
 
@@ -53,17 +50,7 @@ public class Buddies extends AppCompatActivity implements OnMapReadyCallback ,Pl
     private static final int LOCATION_REQUEST = INITIAL_REQUEST + 3;
     private GoogleMap mapObj;
 
-    /**
-     * Helper method to format information about a place nicely.
-     */
-    private static Spanned formatPlaceDetails(Resources res, CharSequence name, String id,
-                                              CharSequence address, CharSequence phoneNumber, Uri websiteUri) {
-        /*Log.e(TAG, res.getString(R.string.place_details, name, id, address, phoneNumber,
-                websiteUri));*/
-        return Html.fromHtml(res.getString(R.string.place_details, name, id, address, phoneNumber,
-                websiteUri));
-
-    }
+  
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

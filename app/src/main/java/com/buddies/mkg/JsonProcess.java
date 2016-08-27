@@ -1,4 +1,4 @@
-package com.trendit.mkg.trendit;
+package com.buddies.mkg;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
